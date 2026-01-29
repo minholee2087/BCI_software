@@ -1,0 +1,6 @@
+# Ignore Data & Models
+HumanEmotionRecognition/data/
+*.pth
+*.pkl
+*.safetensors
+*.bin

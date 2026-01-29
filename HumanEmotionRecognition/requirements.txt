@@ -1,0 +1,9 @@
+torch>=2.0.0
+numpy
+transformers
+timm
+gdown
+scikit-learn
+matplotlib
+Pillow
+pandas
