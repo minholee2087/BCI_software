@@ -106,13 +106,13 @@ run.bat
 
 This script will:
 
-Check that the virtual environment (venv/) exists
+* Check that the virtual environment (venv/) exists
 
-If not found, it will ask you to run install.bat first
+* If not found, it will ask you to run install.bat first
 
-Activate the virtual environment
+* Activate the virtual environment
 
-Launch training using the EAV configuration:
+* Launch program using the EAV configuration:
 
 ---
 
