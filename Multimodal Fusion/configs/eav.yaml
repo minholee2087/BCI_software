@@ -1,0 +1,98 @@
+# ===============================
+# Dataset
+# ===============================
+dataset:
+  name: eav
+  root: data/EAV
+  sampling_rate: 128
+  num_subjects: 20
+  labels:
+    - emotion
+
+# ===============================
+# Modalities
+# ===============================
+modalities:
+  eeg: true
+  audio: true
+  video: true
+
+# ===============================
+# EEG
+# ===============================
+eeg:
+  num_channels: 32
+  input_dim: 128             
+  embed_dim: 256
+  encoder: transformer
+  num_layers: 4
+
+# ===============================
+# Audio
+# ===============================
+audio:
+  type: spectrogram
+  sampling_rate: 16000
+  n_mels: 64
+  hop_length: 256
+  embed_dim: 256
+
+# ===============================
+# Video
+# ===============================
+video:
+  backbone: resnet18
+  pretrained: true
+  frame_rate: 25
+  num_frames: 16
+  embed_dim: 256
+
+# ===============================
+# Fusion
+# ===============================
+fusion:
+  type: ambt
+  bottleneck_tokens: 4
+  embed_dim: 256
+  num_layers: 4
+  num_heads: 8
+  dropout: 0.1
+
+# ===============================
+# Heads
+# ===============================
+head:
+  num_classes: 5             
+  hidden_dim: 128
+  dropout: 0.1
+  use_auxiliary_heads: true
+
+# ===============================
+# Training
+# ===============================
+training:
+  epochs: 60
+  batch_size: 16
+  optimizer: adamw
+  learning_rate: 0.00005
+  weight_decay: 0.01
+  loss: cross_entropy
+  auxiliary_loss_weight: 0.3
+  seed: 42
+
+# ===============================
+# Evaluation
+# ===============================
+evaluation:
+  metrics:
+    - accuracy
+    - f1
+  save_best: true
+
+# ===============================
+# Runtime
+# ===============================
+runtime:
+  device: cuda
+  num_workers: 4
+  output_dir: outputs/eav

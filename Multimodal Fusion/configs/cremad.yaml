@@ -1,0 +1,80 @@
+# ===============================
+# Dataset
+# ===============================
+dataset:
+  name: cremad
+  root: data/CREMA-D
+  num_classes: 6          # anger, disgust, fear, happy, neutral, sad
+  split: official         # official train/test split
+  labels:
+    - emotion
+
+# ===============================
+# Modalities
+# ===============================
+modalities:
+  eeg: false
+  audio: true
+  video: true
+
+# ===============================
+# Audio (Spectrogram)
+# ===============================
+audio:
+  type: spectrogram
+  sampling_rate: 16000
+  n_mels: 64
+  hop_length: 256
+  win_length: 512
+  embed_dim: 256
+
+# ===============================
+# Video
+# ===============================
+video:
+  backbone: resnet18
+  pretrained: true
+  frame_rate: 30
+  num_frames: 16
+  embed_dim: 256
+
+# ===============================
+# Fusion
+# ===============================
+fusion:
+  type: ambt
+  bottleneck_tokens: 4
+  embed_dim: 256
+  num_layers: 4
+  num_heads: 8
+  dropout: 0.1
+
+# ===============================
+# Heads
+# ===============================
+head:
+  num_classes: 6
+  hidden_dim: 128
+  dropout: 0.1
+  use_auxiliary_heads: true
+
+# ===============================
+# Training
+# ===============================
+training:
+  epochs: 40
+  batch_size: 32
+  optimizer: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  loss: cross_entropy
+  auxiliary_loss_weight: 0.3
+  seed: 42
+
+# ===============================
+# Runtime
+# ===============================
+runtime:
+  device: cuda
+  num_workers: 4
+  output_dir: outputs/cremad_av

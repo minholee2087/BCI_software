@@ -1,0 +1,17 @@
+dataset:
+  root: data
+  protocol: loso
+
+modalities:
+  eeg: false
+  video: false
+  audio: false
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.0001
+  seed: 42
+
+runtime:
+  device: cuda
