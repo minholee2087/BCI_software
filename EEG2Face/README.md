@@ -2,6 +2,22 @@
 
 A Windows desktop application that collects EEG signals, processes them using a neural network encoder, and generates 3D facial expressions using a FLAME-based model.
 
+It combines an **EEG Regressor (𝐸𝑟)** and an **Emotion Encoder (𝐸𝑒)**, guided by a pretrained **Vision Encoder (𝐸𝑣)**.
+
+<p align="center">
+  <img src="framework.png" alt="Model Overview" width="820"/>
+</p>
+
+> **Figure 1.** Overview of the EEG2Face Framework. The EEG Regressor (𝐸𝑟) and Emotion Encoder (𝐸𝑒) are guided by a Vision Encoder (𝐸𝑣). Three losses are used during training (contrastive, transformation, vertex alignment). Inference supports three modes: structure-only, natural emotion, and emotion-controlled synthesis.
+
+EEG2Face accurately reconstructs facial expressions from EEG signals. The figure below compares the original video frames (GT) with the reconstructed expressions from our model.
+
+<p align="center">
+  <img src="comparison.png" alt="Model Overview" width="820"/>
+</p>
+
+> **Figure 2.** Comparison of facial expression reconstruction from EEG signals. Three rows show: original video frames (GT) and EEG2Face reconstructed expressions.
+
 ## Features
 
 - **Multiple EEG Sources**: Support for simulated EEG, LSL streams, BrainFlow devices, and file input
