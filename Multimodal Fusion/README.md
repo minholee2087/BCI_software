@@ -120,21 +120,21 @@ This script will:
 
 * Modalities: **EEG + Audio + Video**
 * EEG recordings synchronized with audio and video
-* Preprocessing: 'datasets/EAV/'
+* Preprocessing: `datasets/EAV/`
 * Config: `configs/eav.yaml`
 
 ### CREMA-D
 
 * Modalities: **Audio + Video**
 * Emotion-labeled speech clips from multiple actors
-* Preprocessing: 'datasets/Crema-D/'
+* Preprocessing: `datasets/Crema-D/`
 * Config: `configs/cremad.yaml`
 
 ### DEAP
 
 * Modalities: **EEG + Video**
 * EEG-based emotion recognition benchmark dataset
-* Preprocessing: 'datasets/DEAP/'
+* Preprocessing:  `datasets/DEAP/`
 * Config: `configs/deap.yaml`
 
 
