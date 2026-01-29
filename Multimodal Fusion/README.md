@@ -1,15 +1,25 @@
 # Adaptive Multimodal Bottleneck Transformer (AMBT)
 
 
-> **AMBT** is a parameter-efficient multimodal Transformer for **emotion recognition** that fuses **EEG**, **audio**, and **facial video** via **adaptive bottleneck-token interaction** inside intermediate Transformer layers.
+**Adaptive Multimodal EEG–Audio–Video Fusion Transformer for Emotion Recognition**
 
+This repository provides the official implementation of **AMBT (Adaptive Multimodal Bottleneck Transformer)** — a **parameter-efficient multimodal Transformer** for **brain–computer interface (BCI)** emotion recognition, designed to fuse **EEG**, **speech audio**, and **facial video** via **adaptive bottleneck-token interaction** inside intermediate Transformer layers.
+
+> 📌 This software is developed as a research and commercialization deliverable of the grant project:
+> **“Development of Brain–Computer Interface (BCI) SW/HW Solutions”** (Commercialization Projects Funding)
 ---
 
 ## ✨ Overview
 
-Facial and speech expressions are strong cues for emotion recognition, while EEG provides complementary neural information when external signals are ambiguous or missing. However, integrating heterogeneous modalities remains challenging due to different sampling rates, feature spaces, and backbone architectures.
+Emotion recognition in conversational settings requires robust multimodal understanding. Facial and speech expressions are strong external cues, while **EEG provides complementary neural evidence**, especially when external signals are ambiguous or missing.
 
-**Adaptive Multimodal Bottleneck Transformer (AMBT)** addresses this by introducing **Cross-Modal Adaptation Modules (CMAMs)** that enable controlled and stable cross-modal interaction through bottleneck tokens.
+However, integrating heterogeneous modalities remains challenging due to:
+
+* different sampling rates (EEG vs audio vs video),
+* different feature spaces,
+* different backbone architectures and tokenization methods.
+
+**AMBT** addresses these challenges by introducing **Cross-Modal Adaptation Modules (CMAMs)** that enable **controlled cross-modal interaction** through **bottleneck tokens**, inserted into intermediate layers of modality-specific Transformer encoders.
 
 ---
 
@@ -60,21 +70,23 @@ Evaluated on three benchmark datasets:
 
 ---
 
-## 🔥 Features
+## 🔥 Software Features
 
-- Independent Transformer encoders for EEG, audio, and video
-- **CMAM** modules for controlled bottleneck-token fusion
-- Parameter-efficient multimodal adaptation (**< 1%** trainable params)
-- Unified latent space for fused multimodal representations
-- Supports:
-  - EEG (DEAP / EAV format)
-  - Audio spectrograms (CREMA-D / EAV)
-  - Facial video (CREMA-D / DEAP / EAV)
-- Modular codebase:
-  - `src/models/` – unimodal + fusion models
-  - `src/datasets/` – dataset loaders
-  - `src/training/` – training & evaluation scripts
-  - `src/utils/` – config, logging, metrics, checkpointing, seeding
+* Independent Transformer encoders for **EEG**, **audio**, and **video**
+* **CMAM** modules for controlled bottleneck-token fusion
+* Parameter-efficient multimodal adaptation (**< 1% trainable params**)
+* Unified latent space for fused multimodal representations
+* Supported modalities and formats:
+
+  * EEG (DEAP / EAV format)
+  * Audio spectrograms (CREMA-D / EAV)
+  * Facial video (CREMA-D / DEAP / EAV)
+* Modular research codebase:
+
+  * `src/models/` – unimodal + fusion models
+  * `src/datasets/` – dataset loaders
+  * `src/training/` – training & evaluation scripts
+  * `src/utils/` – config, logging, metrics, checkpointing, seeding
 
 ---
 
@@ -96,9 +108,27 @@ This will:
 
 ---
 
-## 🚀 Usage
+## ⚙️ Installation
+
+### Windows (Recommended)
 
 Run:
+
+```bash
+install.bat
+```
+
+This will:
+
+* verify Python **3.8+** is installed
+* create a virtual environment (`venv/`)
+* install dependencies from `requirements.txt`
+
+---
+
+## 🚀 Usage
+
+Run the training pipeline:
 
 ```bash
 run.bat
@@ -106,10 +136,33 @@ run.bat
 
 This script will:
 
-* Check that the virtual environment (venv/) exists
-* If not found, it will ask you to run install.bat first
-* Activate the virtual environment
-* Launch program using the EAV configuration:
+* check that the virtual environment (`venv/`) exists
+* if missing, prompt you to run `install.bat` first
+* activate the virtual environment
+* launch training using the **DEAP** configuration:
+
+```bat
+@echo off
+echo ========================================
+echo Multimodal Emotion Recognition - Run
+echo ========================================
+echo.
+
+REM Activate venv
+if not exist venv (
+    echo Virtual environment not found.
+    echo Please run install.bat first.
+    pause
+    exit /b 1
+)
+
+call venv\Scripts\activate.bat
+
+REM Run training
+python src/training/train.py --config configs/deap.yaml
+
+pause
+```
 
 ---
 
@@ -197,5 +250,4 @@ This script will:
 │       ├── device.py
 │       ├── logging.py
 │       └── metrics.py
-└── tests
-    └── test_forward.py
+└── main.py
