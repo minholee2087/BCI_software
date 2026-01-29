@@ -98,71 +98,48 @@ This will:
 
 ## 🚀 Usage
 
-### Training
+Run:
 
 ```bash
-python src/training/train.py --config configs/cremad.yaml
+run.bat
 ```
 
-### Evaluation
+This script will:
 
-```bash
-python src/training/evaluate.py --config configs/eav.yaml --checkpoint checkpoints/ambt_best.pth
-```
+Check that the virtual environment (venv/) exists
+
+If not found, it will ask you to run install.bat first
+
+Activate the virtual environment
+
+Launch training using the EAV configuration:
 
 ---
 
-## 🧾 Configuration
-
-All experiment settings are defined in YAML files under `configs/`.
-
-Example:
-
-```yaml
-dataset:
-  name: crema_d
-  modality: [audio, video]
-
-training:
-  batch_size: 32
-  learning_rate: 1e-4
-  epochs: 50
-
-runtime:
-  device: cuda
-```
-
----
 
 ## 📦 Datasets
-
-### CREMA-D
-
-* Modalities: **Audio + Video**
-* Emotion-labeled speech clips from multiple actors
-* Config: `configs/cremad.yaml`
 
 ### EAV (EEG-Audio-Video Dataset)
 
 * Modalities: **EEG + Audio + Video**
 * EEG recordings synchronized with audio and video
+* Preprocessing: 'datasets/EAV/'
 * Config: `configs/eav.yaml`
+
+### CREMA-D
+
+* Modalities: **Audio + Video**
+* Emotion-labeled speech clips from multiple actors
+* Preprocessing: 'datasets/Crema-D/'
+* Config: `configs/cremad.yaml`
 
 ### DEAP
 
 * Modalities: **EEG + Video**
 * EEG-based emotion recognition benchmark dataset
+* Preprocessing: 'datasets/DEAP/'
 * Config: `configs/deap.yaml`
 
----
-
-## 🧪 Testing
-
-Run a basic forward-pass test:
-
-```bash
-python -m main.py --config configs/eav.yaml
-```
 
 ---
 
