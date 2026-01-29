@@ -8,7 +8,6 @@ It includes:
 1. **AMBT** – Adaptive Multimodal Bottleneck Transformer for EEG–Audio–Video emotion recognition.
 2. **EEG2Face** – EEG-to-FLAME 3D facial expression generator.
 
-> 📌 These systems were developed as part of **next-generation BCI software solutions**, supporting research, commercialization, and clinical applications.
 
 ---
 
