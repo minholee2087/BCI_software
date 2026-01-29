@@ -15,6 +15,6 @@ if not exist venv (
 call venv\Scripts\activate.bat
 
 REM Run training
-python main.py --config configs/deap.yaml
+python main.py --config configs/eav.yaml
 
 pause
