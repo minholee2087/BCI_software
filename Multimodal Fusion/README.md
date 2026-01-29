@@ -78,6 +78,94 @@ Evaluated on three benchmark datasets:
 
 ---
 
+## ⚙️ Installation
+
+### Windows
+
+Run:
+
+```bash
+install.bat
+```
+
+This will:
+
+* Verify Python **3.8+** is installed
+* Create a virtual environment (`venv/`)
+* Install dependencies from `requirements.txt`
+
+---
+
+## 🚀 Usage
+
+### Training
+
+```bash
+python src/training/train.py --config configs/cremad.yaml
+```
+
+### Evaluation
+
+```bash
+python src/training/evaluate.py --config configs/eav.yaml --checkpoint checkpoints/ambt_best.pth
+```
+
+---
+
+## 🧾 Configuration
+
+All experiment settings are defined in YAML files under `configs/`.
+
+Example:
+
+```yaml
+dataset:
+  name: crema_d
+  modality: [audio, video]
+
+training:
+  batch_size: 32
+  learning_rate: 1e-4
+  epochs: 50
+
+runtime:
+  device: cuda
+```
+
+---
+
+## 📦 Datasets
+
+### CREMA-D
+
+* Modalities: **Audio + Video**
+* Emotion-labeled speech clips from multiple actors
+* Config: `configs/cremad.yaml`
+
+### EAV (EEG-Audio-Video Dataset)
+
+* Modalities: **EEG + Audio + Video**
+* EEG recordings synchronized with audio and video
+* Config: `configs/eav.yaml`
+
+### DEAP
+
+* Modalities: **EEG + Video**
+* EEG-based emotion recognition benchmark dataset
+* Config: `configs/deap.yaml`
+
+---
+
+## 🧪 Testing
+
+Run a basic forward-pass test:
+
+```bash
+python -m main.py --config configs/eav.yaml
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
