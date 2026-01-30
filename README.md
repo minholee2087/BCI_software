@@ -1,4 +1,4 @@
-# CogniFace: Integrated BCI & Emotion AI Suite
+# 🧠 CogniFace: Integrated BCI & Emotion AI Suite
 
 This repository contains official software deliverables from the grant project:
 **“Development of Brain–Computer Interface (BCI) SW/HW Solutions”** (Commercialization Projects Funding)
