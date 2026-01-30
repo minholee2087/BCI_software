@@ -20,7 +20,7 @@ class DryEEGDevice:
         print(f"\n[HARDWARE] Scanning for {self.device_name}...")
         time.sleep(1.5)  # Simulate bluetooth handshake
         self.is_connected = True
-        print(f"[HARDWARE] ✅ Connected to {self.device_name} (ID: AA:BB:CC:11:22)")
+        print(f"[HARDWARE] Connected to {self.device_name} (ID: AA:BB:CC:11:22)")
         return True
 
     def check_impedance(self):
@@ -29,7 +29,7 @@ class DryEEGDevice:
             print("[ERROR] Device not connected.")
             return False
 
-        print("[HARDWARE] ⚡ Measuring Impedance...")
+        print("[HARDWARE] Measuring Impedance...")
         time.sleep(1.0)
         # Simulate impedance values for 8 channels (in kOhms)
         # Dry EEG usually requires < 50kOhm, Wet < 10kOhm
@@ -42,7 +42,7 @@ class DryEEGDevice:
     def stream(self, duration=5):
         """Simulate data streaming for a fixed duration."""
         if not self.is_connected: return
-        print(f"[HARDWARE] 📡 Streaming Raw Data ({duration}s)...")
+        print(f"[HARDWARE] Streaming Raw Data ({duration}s)...")
         self.is_streaming = True
 
         # Simulate a stream loop
