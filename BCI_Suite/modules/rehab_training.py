@@ -15,7 +15,7 @@ class NeuroRehabTrainer:
         self.session_duration = 10  # seconds for demo
 
     def start_session(self):
-        print(f"\n[REHAB] 🏥 Starting Neuro-Feedback Therapy")
+        print(f"\n[REHAB] Starting Neuro-Feedback Therapy")
         print(f"[REHAB] Target State: {self.target.upper()}")
         print("[REHAB] Instructions: Relax and focus on the green circle on screen.")
         print("-" * 40)
@@ -31,15 +31,15 @@ class NeuroRehabTrainer:
 
             if current == self.target:
                 self.score += 10
-                print(f"   Using Brain: {current} | ✅ FEEDBACK: Audio Tone + Visual Glow (+10 pts)")
+                print(f"   Using Brain: {current} | FEEDBACK: Audio Tone + Visual Glow (+10 pts)")
             else:
-                print(f"   Using Brain: {current} | ❌ FEEDBACK: Silence (Try again)")
+                print(f"   Using Brain: {current} | FEEDBACK: Silence (Try again)")
 
         print("-" * 40)
         print(f"[REHAB] Session Complete. Total Score: {self.score}/100")
         self.save_patient_report()
 
     def save_patient_report(self):
-        print(f"[REHAB] 📄 Generating medical report: 'patient_session_001.pdf'...")
+        print(f"[REHAB] Generating medical report: 'patient_session_001.pdf'...")
         time.sleep(0.5)
         print("[REHAB] Report saved to hospital database.")
