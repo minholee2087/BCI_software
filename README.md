@@ -22,7 +22,7 @@ Facial and speech expressions provide strong cues for emotion recognition, while
 **AMBT** introduces **Cross-Modal Adaptation Modules (CMAMs)** that enable controlled cross-modal interaction using bottleneck tokens.
 
 <p align="center">
-  <img src="Multimodal Fusion\ambt.png" alt="AMBT Overview" width="820"/>
+  <img src="Multimodal Fusion\ambt_overview.png" alt="AMBT Overview" width="820"/>
 </p>
 
 > **Figure 1.** AMBT overview: unimodal encoders + CMAM adapters with bottleneck tokens enabling cross-modal exchange.
