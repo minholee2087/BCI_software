@@ -1,4 +1,4 @@
-# 🧠 BCI Suite
+# BCI Suite
 
 ### Next-Generation Neuro-Technology for Healthcare & Rehabilitation
 
