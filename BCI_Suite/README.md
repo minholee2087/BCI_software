@@ -64,7 +64,7 @@ The system is modularized into the following commercial packages:
    ```bash
    git clone https://github.com/minholee2087/BCI_software.git
    cd BCI_Suite
-````
+   ```
 
 2. **Install dependencies**
 
