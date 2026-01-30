@@ -1,4 +1,4 @@
-# 🧠 CogniFace: Integrated BCI & Emotion AI Suite
+# 🧠 BCI Suite
 
 ### Next-Generation Neuro-Technology for Healthcare & Rehabilitation
 
@@ -18,7 +18,7 @@
 
 ## 🚀 Overview
 
-BCI_Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
+BCI Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
 
 
 
