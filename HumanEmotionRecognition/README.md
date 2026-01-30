@@ -12,6 +12,19 @@ This technology is designed for integration into:
 - Interactive Digital Healthcare Systems
 - Neuromarketing & User Experience Analytics
 
+<p align="center">
+  <img src="model.png" alt="AMBT Overview" width="820"/>
+</p>
+
+> **Figure 1.** Multimodal ZSL for EEG emotion recognition: EEG is encoded by an EEG Transformer, while audio–video features are fused via bottleneck AV Transformer. Both embeddings are aligned in a shared semantic space for unseen-class prediction using centroid-based inference.
+
+<p align="center">
+  <img src="eeg_emo.png" alt="AMBT Overview" width="820"/>
+</p>
+
+> **Figure 2.** Beta-band EEG patterns across emotions. Averaged 11–20 Hz envelope power over time (20 s speaking task) is shown for five emotions across left hemisphere, frontal lobe, and right hemisphere; topographic maps below illustrate emotion-specific spatial EEG distributions.
+
+
 ## 🚀 Key Features
 
 - **Multimodal Fusion:** Synchronizes EEG, Audio, and Video streams using a Transformer-based architecture.
