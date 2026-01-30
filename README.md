@@ -109,13 +109,13 @@ This technology is designed for integration into:
 * Neuromarketing & User Experience Analytics
 
 <p align="center">
-  <img src="model.png" alt="Overview" width="820"/>
+  <img src="HumanEmotionRecognition/model.png" alt="Overview" width="820"/>
 </p>
 
 > **Figure 4.** Multimodal ZSL for EEG emotion recognition: EEG is encoded by an EEG Transformer, while audio–video features are fused via bottleneck AV Transformer. Both embeddings are aligned in a shared semantic space for unseen-class prediction using centroid-based inference.
 
 <p align="center">
-  <img src="eeg_emo.png" alt="Overview" width="820"/>
+  <img src="HumanEmotionRecognition/eeg_emo.png" alt="Overview" width="820"/>
 </p>
 
 > **Figure 5.** Beta-band EEG patterns across emotions. Averaged 11–20 Hz envelope power over time (20 s speaking task) is shown for five emotions across left hemisphere, frontal lobe, and right hemisphere; topographic maps below illustrate emotion-specific spatial EEG distributions.
@@ -125,49 +125,6 @@ This technology is designed for integration into:
 * **Multimodal Fusion:** Synchronizes EEG, Audio, and Video streams using a Transformer-based architecture.
 * **Zero-Shot Learning:** Recognizes emotional states without subject-specific calibration.
 * **Modular Design:** Independent processing blocks for easy integration into existing hospital systems.
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/minholee2087/BCI_software.git
-   cd HumanEmotionRecognition
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download the dataset**
-
-   ```bash
-   python main.py --mode download
-   ```
-
-### Usage
-
-#### Run Full Training (All Classes)
-
-```bash
-python main.py --mode train_all
-```
-
-#### Run Zero-Shot Experiment
-
-```bash
-python main.py --mode zeroshot --class_label 3
-```
-
-Class labels:
-
-* `0` = Neutral
-* `1` = Sadness
-* `2` = Anger
-* `3` = Happiness
-* `4` = Calmness
 
 ### Architecture
 
@@ -205,26 +162,6 @@ This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI 
 | **`modules.realtime`**         | < 10ms Signal Processing Pipeline     | Hardware Developers        |
 | **`modules.dry_eeg`**          | Driver support for next-gen wearables | Device Manufacturers       |
 
-### Installation & Usage
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/minholee2087/BCI_software.git
-   cd BCI_Suite
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Launch the commercial suite**
-
-   ```bash
-   python main_integrated_system.py
-   ```
 
 ---
 
