@@ -1,103 +1,87 @@
-\# HumanEmotionRecognition: Multimodal BCI System
 
+# HumanEmotionRecognition: Multimodal BCI System
 
+**A commercial-grade Brain-Computer Interface (BCI) solution for emotion recognition using EEG, Audio, and Video data.**
 
-\*\*A commercial-grade Brain-Computer Interface (BCI) solution for emotion recognition using EEG, Audio, and Video data.\*\*
+## 📌 Overview
 
-
-
-\## 📌 Overview
-
-This software provides a modularized AI framework for recognizing human emotional states (Neutral, Sadness, Anger, Happiness, Calmness). It leverages a novel \*\*Cross-Modal Bottleneck Fusion\*\* architecture to integrate physiological signals (EEG) with audiovisual cues, enabling high-accuracy emotion detection even in Zero-Shot scenarios.
-
-
+This software provides a modular AI framework for recognizing human emotional states (**Neutral, Sadness, Anger, Happiness, Calmness**). It leverages a novel **Cross-Modal Bottleneck Fusion** architecture to integrate physiological signals (EEG) with audiovisual cues, enabling high-accuracy emotion detection even in **Zero-Shot** scenarios.
 
 This technology is designed for integration into:
+- Medical Rehabilitation Centers
+- Interactive Digital Healthcare Systems
+- Neuromarketing & User Experience Analytics
 
-\- Medical Rehabilitation Centers
+## 🚀 Key Features
 
-\- Interactive Digital Healthcare Systems
+- **Multimodal Fusion:** Synchronizes EEG, Audio, and Video streams using a Transformer-based architecture.
+- **Zero-Shot Learning:** Recognizes emotional states without subject-specific calibration.
+- **Modular Design:** Independent processing blocks for easy integration into existing hospital systems.
 
-\- Neuromarketing \& User Experience Analytics
+## 🛠️ Installation
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/minholee2087/BCI_software.git
+   cd HumanEmotionRecognition
+   ``` 
 
+2. **Install dependencies**
 
-\## 🚀 Key Features
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-\- \*\*Multimodal Fusion:\*\* Synchronizes EEG, Audio, and Video streams using Transformer-based architecture.
+3. **Download the dataset**
 
-\- \*\*Zero-Shot Learning:\*\* Capable of recognizing emotional states without subject-specific calibration.
+   The system requires the **Global Multimodal BCI Dataset**. Run the following command to download it automatically:
 
-\- \*\*Modular Design:\*\* Independent processing blocks for easy integration into existing hospital systems.
+   ```bash
+   python main.py --mode download
+   ```
 
+## ▶️ Usage
 
+The system operates via a command-line interface (CLI) for robust automation.
 
-\## 🛠️ Installation
+### 1) Run Full Training (All Classes)
 
+Train the model on all 5 emotion classes:
 
+```bash
+python main.py --mode train_all
+```
 
-1\. \*\*Clone the repository:\*\*
+### 2) Run Zero-Shot Experiment
 
-   ```bash
+Test the model’s ability to recognize a specific emotion (e.g., Happiness) without prior training on that specific class:
 
-   git clone \[https://github.com/minholee2087/BCI\_software.git](https://github.com/minholee2087/BCI\_software.git)
+```bash
+python main.py --mode zeroshot --class_label 3
+```
 
-   cd HumanEmotionRecognition
+Class labels:
 
+* `0` = Neutral
+* `1` = Sadness
+* `2` = Anger
+* `3` = Happiness
+* `4` = Calmness
 
+## 🧠 Architecture
 
-2\. Install dependencies:
+The system utilizes a **Cross-Modal Bottleneck Fusion Transformer**.
 
-&nbsp;  ```bash
-   pip install -r requirements.txt
+* **Inputs:** EEG signals, Audio spectrograms, Video frames
+* **Encoders:** Independent Transformer backbones for each modality
+* **Fusion:** A shared bottleneck mechanism enables efficient information exchange across modalities before classification
 
+## 📄 License
 
+This project is licensed under the MIT License — see the `LICENSE` file for details.
 
-3\. Download the Dataset: The system requires the Global Multimodal BCI Dataset. Run the following command to download it automatically:
+## 🙏 Acknowledgments
 
-   ```bash
-   python main.py --mode download
+Supported by the Health and Medical Technology R&D Program and developed in collaboration with Nazarbayev University and DGMIF.
 
-
-
-4\. Usage: The system operates via a command-line interface (CLI) for robust automation.
-
-&nbsp;	1) Run Full Training (All Classes). Train the model on all 5 emotion classes.
-
-&nbsp;	```bash
-
-&nbsp;	python main.py --mode train\_all
-
-&nbsp;	
-
-&nbsp;	2) Run Zero-Shot Experiment. Test the model's ability to recognize a specific emotion (e.g., Happiness) without prior training on that specific class.
-
-&nbsp;	```bash
-
-&nbsp;	python main.py --mode zeroshot --class\_label 3
-
-&nbsp;	# Class Labels: 0=Neutral, 1=Sadness, 2=Anger, 3=Happiness, 4=Calmness
-
-
-
-5\. Architecture:
-
-The system utilizes a Cross-Modal Bottleneck Fusion Transformer.
-
-Inputs: EEG signals, Audio spectrograms, Video frames.
-
-Encoders: Independent ViT (Vision Transformer) backbones for each modality.
-
-Fusion: A shared bottleneck mechanism allows modalities to exchange information efficiently before classification.
-
-
-
-6\. License: 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
-7\. Acknowledgments:
-
-Supported by the Health and Medical Technology R\&D Program and developed in collaboration with Nazarbayev University and DGMIF.
 
