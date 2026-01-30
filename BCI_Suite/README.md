@@ -38,66 +38,46 @@ This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI 
 
 
 
+
 ## 📦 Commercial Modules
 
 The system is modularized into the following commercial packages:
 
-
-
 | Module | Function | Target User |
-
 | :--- | :--- | :--- |
-
-| \*\*`modules.zero\_calibration`\*\* | AI that works instantly on new users | Hospitals / Public Clinics |
-
-| \*\*`modules.rehab\_training`\*\* | Gamified focus/relaxation training | Rehab Centers |
-
-| \*\*`modules.realtime`\*\* | < 10ms Signal Processing Pipeline | Hardware Developers |
-
-| \*\*`modules.dry\_eeg`\*\* | Driver support for next-gen wearables | Device Manufacturers |
-
-
-
+| **`modules.zero_calibration`** | AI that works instantly on new users | Hospitals / Public Clinics |
+| **`modules.rehab_training`** | Gamified focus/relaxation training | Rehab Centers |
+| **`modules.realtime`** | < 10ms Signal Processing Pipeline | Hardware Developers |
+| **`modules.dry_eeg`** | Driver support for next-gen wearables | Device Manufacturers |
 
 ---
-
-
 
 ## 🛠️ Installation & Usage
 
 ### Prerequisites
-
 - Python 3.8+
-
-- [Optional] CUDA-enabled GPU for accelerated inference
-
-
+- *(Optional)* CUDA-enabled GPU for accelerated inference
 
 ### Quick Start
 
-1. **Clone the Repository**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/minholee2087/BCI_software.git
+   cd BCI_Suite
+````
 
-&nbsp;  ```bash
+2. **Install dependencies**
 
-&nbsp;  git clone [https://github.com/minholee2087/BCI_software.git](https://github.com/minholee2087/BCI_software.git)
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-&nbsp;  cd BCI_Suite
+3. **Launch the commercial suite**
 
-
-
-2. **Install Dependencies**
-
-&nbsp;  ```bash
-
-&nbsp;  pip install -r requirements.txt
+   ```bash
+   python main_integrated_system.py
+   ```
 
 
 
-3. Launch the Commercial Suite
-
-&nbsp;  ```bash
-
-&nbsp;  cd BCI_Suite
-
-&nbsp;  python main_integrated_system.py
 
