@@ -51,7 +51,7 @@ CMAM injects multimodal interaction into intermediate Transformer layers using b
 ### Bottleneck Token Interaction
 
 <p align="center">
-  <img src="cmam_block.png" alt="CMAM Block" width="620"/>
+  <img src="cmam_block.png" alt="CMAM Block" width="720"/>
 </p>
 
 > **Figure 2.** CMAM block: bottleneck tokens interact with modality-specific tokens and propagate fused context.
