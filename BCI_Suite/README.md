@@ -48,13 +48,14 @@ The system is modularized into the following commercial packages:
 
 | :--- | :--- | :--- |
 
-| **`modules.zero_calibration`** | AI that works instantly on new users | Hospitals / Public Clinics |
+| \*\*`modules.zero\_calibration`\*\* | AI that works instantly on new users | Hospitals / Public Clinics |
 
-| **`modules.rehab_training`** | Gamified focus/relaxation training | Rehab Centers |
+| \*\*`modules.rehab\_training`\*\* | Gamified focus/relaxation training | Rehab Centers |
 
-| **`modules.realtime`** | < 10ms Signal Processing Pipeline | Hardware Developers |
+| \*\*`modules.realtime`\*\* | < 10ms Signal Processing Pipeline | Hardware Developers |
 
-| **`modules.dry_eeg`** | Driver support for next-gen wearables | Device Manufacturers |
+| \*\*`modules.dry\_eeg`\*\* | Driver support for next-gen wearables | Device Manufacturers |
+
 
 
 
