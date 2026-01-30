@@ -41,7 +41,7 @@ AMBT performs fusion using **adapter-style bottleneck interaction**:
 CMAM injects multimodal interaction into intermediate Transformer layers using bottleneck tokens shared across modalities.
 
 <p align="center">
-  <img src="ambt.png" alt="AMBT Overview" width="820"/>
+  <img src="ambt_overview.png" alt="AMBT Overview" width="820"/>
 </p>
 
 > **Figure 1.** Overview of AMBT: unimodal encoders + CMAM adapters with bottleneck tokens enabling cross-modal exchange.
