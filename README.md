@@ -50,7 +50,7 @@ Facial and speech expressions provide strong cues for emotion recognition, while
 ## 2️⃣ EEG2Face: FLAME 3D Face Generator
 
 **EEG2Face** is a Windows desktop application that **reconstructs 3D facial expressions from EEG signals** using a **FLAME-based model**, guided by a neural network architecture combining **EEG Regressor (𝐸𝑟)**, **Emotion Encoder (𝐸𝑒)**, and pretrained **Vision Encoder (𝐸𝑣)**.
-
+### Overview
 <p align="center">
   <img src="EEG2Face/framework.png" alt="EEG2Face Framework" width="820"/>
 </p>
@@ -72,13 +72,6 @@ Facial and speech expressions provide strong cues for emotion recognition, while
 * Export options: OBJ/PLY meshes, NPZ parameters
 * Model persistence: save/load trained weights
 
-### Supported EEG Devices
-
-* OpenBCI Cyton/Ganglion
-* Muse 2/S
-* Neurosity Crown
-* Emotiv EPOC
-* Any LSL-compatible device
 
 ### Architecture
 
