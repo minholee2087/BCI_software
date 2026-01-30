@@ -1,36 +1,14 @@
-\# 🧠 CogniFace: Integrated BCI \& Emotion AI Suite
+# 🧠 CogniFace: Integrated BCI & Emotion AI Suite
 
-\### Next-Generation Neuro-Technology for Healthcare \& Rehabilitation
-
-
-
-\[!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-\[!\[Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-
-\[!\[Commercial Ready](https://img.shields.io/badge/Status-Commercial%20Pilot-green)](https://github.com/YourUsername/CogniFace)
+### Next-Generation Neuro-Technology for Healthcare & Rehabilitation
 
 
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 
-
-\## 🚀 Overview
-
-BCI\_Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the \*\*Health \& Medical Technology R\&D Program\*\*. It bridges the gap between advanced AI research and practical clinical application.
-
-
-
-This repository contains the source code for \*\*Deliverable 1.2.1: Low-Level BCI Software Outputs\*\*, featuring:
-
-1\.  \*\*Zero-Calibration Engine:\*\* Plug-and-play BCI without subject training.
-
-2\.  \*\*Neuro-Rehab Trainer:\*\* Gamified neurofeedback for patient therapy.
-
-3\.  \*\*Real-Time Processing:\*\* Low-latency signal filtering and artifact removal.
-
-4\.  \*\*Universal Hardware Support:\*\* Drivers for Dry-EEG and clinical headsets.
+[![Commercial Ready](https://img.shields.io/badge/Status-Commercial%20Pilot-green)](https://github.com/YourUsername/CogniFace)
 
 
 
@@ -38,7 +16,29 @@ This repository contains the source code for \*\*Deliverable 1.2.1: Low-Level BC
 
 
 
-\## 📦 Commercial Modules
+## 🚀 Overview
+
+BCI_Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
+
+
+
+This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI Software Outputs**, featuring:
+
+1.  **Zero-Calibration Engine:** Plug-and-play BCI without subject training.
+
+2.  **Neuro-Rehab Trainer:** Gamified neurofeedback for patient therapy.
+
+3.  **Real-Time Processing:** Low-latency signal filtering and artifact removal.
+
+4.  **Universal Hardware Support:** Drivers for Dry-EEG and clinical headsets.
+
+
+
+---
+
+
+
+## 📦 Commercial Modules
 
 The system is modularized into the following commercial packages:
 
@@ -48,13 +48,13 @@ The system is modularized into the following commercial packages:
 
 | :--- | :--- | :--- |
 
-| \*\*`modules.zero\_calibration`\*\* | AI that works instantly on new users | Hospitals / Public Clinics |
+| **`modules.zero_calibration`** | AI that works instantly on new users | Hospitals / Public Clinics |
 
-| \*\*`modules.rehab\_training`\*\* | Gamified focus/relaxation training | Rehab Centers |
+| **`modules.rehab_training`** | Gamified focus/relaxation training | Rehab Centers |
 
-| \*\*`modules.realtime`\*\* | < 10ms Signal Processing Pipeline | Hardware Developers |
+| **`modules.realtime`** | < 10ms Signal Processing Pipeline | Hardware Developers |
 
-| \*\*`modules.dry\_eeg`\*\* | Driver support for next-gen wearables | Device Manufacturers |
+| **`modules.dry_eeg`** | Driver support for next-gen wearables | Device Manufacturers |
 
 
 
@@ -62,29 +62,29 @@ The system is modularized into the following commercial packages:
 
 
 
-\## 🛠️ Installation \& Usage
+## 🛠️ Installation & Usage
 
-\### Prerequisites
+### Prerequisites
 
-\- Python 3.8+
+- Python 3.8+
 
-\- \[Optional] CUDA-enabled GPU for accelerated inference
+- [Optional] CUDA-enabled GPU for accelerated inference
 
 
 
-\### Quick Start
+### Quick Start
 
-1\. \*\*Clone the Repository\*\*
+1. **Clone the Repository**
 
 &nbsp;  ```bash
 
-&nbsp;  git clone \[https://github.com/minholee2087/BCI\_software.git](https://github.com/minholee2087/BCI\_software.git)
+&nbsp;  git clone [https://github.com/minholee2087/BCI_software.git](https://github.com/minholee2087/BCI_software.git)
 
-&nbsp;  cd BCI\_Suite
+&nbsp;  cd BCI_Suite
 
 
 
-2\. \*\*Install Dependencies\*\*
+2. **Install Dependencies**
 
 &nbsp;  ```bash
 
@@ -92,11 +92,11 @@ The system is modularized into the following commercial packages:
 
 
 
-3\. Launch the Commercial Suite
+3. Launch the Commercial Suite
 
 &nbsp;  ```bash
 
-&nbsp;  cd BCI\_Suite
+&nbsp;  cd BCI_Suite
 
-&nbsp;  python main\_integrated\_system.py
+&nbsp;  python main_integrated_system.py
 
