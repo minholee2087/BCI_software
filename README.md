@@ -1,4 +1,4 @@
-# BCI_software
+# CogniFace: Integrated BCI & Emotion AI Suite
 
 This repository contains official software deliverables from the grant project:
 **“Development of Brain–Computer Interface (BCI) SW/HW Solutions”** (Commercialization Projects Funding)
@@ -127,7 +127,7 @@ This technology is designed for integration into:
 
 ---
 
-## 4️⃣ CogniFace: Integrated BCI & Emotion AI Suite
+## 4️⃣ BCI Suite
 
 ### Next-Generation Neuro-Technology for Healthcare & Rehabilitation
 
@@ -137,7 +137,7 @@ This technology is designed for integration into:
 
 ### Overview
 
-BCI_Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
+BCI Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
 
 This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI Software Outputs**, featuring:
 
