@@ -154,7 +154,7 @@ This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI 
 
 ---
 
-## 📚 Publications & Patents
+## Publications & Patents
 
 ### Publications
 
@@ -170,7 +170,7 @@ This repository contains the source code for **Deliverable 1.2.1: Low-Level BCI 
 
 ---
 
-## 📩 Contact
+## Contact
 
 **Minho Lee** (PI) — [minho.lee@nu.edu.kz](mailto:minho.lee@nu.edu.kz)
 Nazarbayev University, SEDS
