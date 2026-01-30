@@ -131,10 +131,6 @@ This technology is designed for integration into:
 
 ### Next-Generation Neuro-Technology for Healthcare & Rehabilitation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![Commercial Ready](https://img.shields.io/badge/Status-Commercial%20Pilot-green)](https://github.com/YourUsername/CogniFace)
-
 ### Overview
 
 BCI Suite is a comprehensive Brain-Computer Interface (BCI) solution developed under the **Health & Medical Technology R&D Program**. It bridges the gap between advanced AI research and practical clinical application.
