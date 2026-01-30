@@ -13,9 +13,9 @@ class ZeroCalibrationBCI:
         self.mode = "Universal_ZeroShot_v2"
 
     def initialize_session(self):
-        print(f"\n[ZERO-CALIB] 🔄 Loading Universal Model ({self.mode})...")
+        print(f"\n[ZERO-CALIB] Loading Universal Model ({self.mode})...")
         time.sleep(1.5)
-        print("[ZERO-CALIB] ✅ Model Loaded. No Subject Training Required.")
+        print("[ZERO-CALIB] Model Loaded. No Subject Training Required.")
         print("[ZERO-CALIB] System is ready for user.")
 
     def run_demo(self):
